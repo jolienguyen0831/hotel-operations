@@ -13,7 +13,7 @@ public class Main {
         System.out.println(room2);
 
 
-        Reservation reservation = new Reservation("king", 50,true);
+        Reservation reservation = new Reservation("king", 50, true);
         System.out.println(reservation);
 
         Reservation reservation1 = new Reservation();
@@ -23,7 +23,7 @@ public class Main {
         System.out.println(reservation1);
 
 
-        Employee employee = new Employee(1234, "Jolie", "PM", 55.6,50);
+        Employee employee = new Employee(1234, "Jolie", "PM", 55.6, 50);
         System.out.println(employee);
 
         Employee employee1 = new Employee();

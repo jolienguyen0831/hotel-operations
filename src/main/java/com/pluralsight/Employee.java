@@ -7,7 +7,7 @@ public class Employee {
     private double payRate;
     private double hoursWorked;
 
-    public Employee(){
+    public Employee() {
 
     }
 
@@ -58,6 +58,7 @@ public class Employee {
     public void setHoursWorked(double hoursWorked) {
         this.hoursWorked = hoursWorked;
     }
+
     public double getRegularHours() {
         if (getHoursWorked() <= 40) {
             return getHoursWorked();
@@ -66,15 +67,15 @@ public class Employee {
         }
     }
 
-    public double getOvertimeHours(){
+    public double getOvertimeHours() {
         if (hoursWorked > 40) {
             return getHoursWorked() - 40;
-        }else {
+        } else {
             return 0;
         }
     }
 
-    public double getTotalPay(){
+    public double getTotalPay() {
         double regularPay = getRegularHours() * getPayRate();
         double overtimePay = getOvertimeHours() * 1.5 * getPayRate();
         return regularPay + overtimePay;

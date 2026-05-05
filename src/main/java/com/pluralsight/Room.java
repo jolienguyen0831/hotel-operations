@@ -6,7 +6,9 @@ public class Room {
     private boolean occupied;
     private boolean dirty;
 
-    public Room(){}
+    public Room() {
+    }
+
     public Room(double price, boolean occupied, boolean dirty, int numberOfBeds) {
         this.price = price;
         this.occupied = occupied;
