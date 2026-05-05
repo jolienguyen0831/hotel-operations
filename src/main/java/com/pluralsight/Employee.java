@@ -68,7 +68,7 @@ public class Employee {
     }
 
     public double getOvertimeHours() {
-        if (hoursWorked > 40) {
+        if (getHoursWorked()> 40) {
             return getHoursWorked() - 40;
         } else {
             return 0;
