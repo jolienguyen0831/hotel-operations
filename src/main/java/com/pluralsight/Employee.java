@@ -75,4 +75,14 @@ public class Employee {
         double overtimePay = getOvertimeHours() * 1.5 * getPayRate();
         return regularPay + overtimePay;
     }
+
+    @Override
+    public String toString() {
+        return "employeeId = " + employeeId +
+                ", name = '" + name + '\'' +
+                ", department = '" + department + '\'' +
+                ", payRate = " + payRate +
+                ", hoursWorked = " + hoursWorked +
+                ", totalPay = " + getTotalPay();
+    }
 }

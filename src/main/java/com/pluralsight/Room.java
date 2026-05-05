@@ -30,7 +30,14 @@ public class Room {
         return dirty;
     }
 
-    public boolean isAvailable(){
+    public boolean isAvailable() {
         return !isOccupied() && !isDirty();
+    }
+
+    @Override
+    public String toString() {
+        return "numberOfBeds = " + numberOfBeds +
+                ", price = " + price +
+                ", available : " + isAvailable();
     }
 }

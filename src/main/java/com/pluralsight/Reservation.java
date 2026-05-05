@@ -53,4 +53,12 @@ public class Reservation {
     public double getReservationTotal(){
         return getPrice() * getNumberOfNights();
     }
+
+    @Override
+    public String toString() {
+        return "roomType = '" + roomType + '\'' +
+                ", numberOfNights = " + numberOfNights +
+                ", weekend = " + weekend +
+                ", reservation total = " + getReservationTotal();
+    }
 }
