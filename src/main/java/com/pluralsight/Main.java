@@ -11,6 +11,14 @@ public class Main {
         room2.setOccupied(false);
         room2.setDirty(false);
         System.out.println(room2);
+        room2.checkedIn();
+        room2.checkOut();
+        room2.cleanRoom();
+
+        room1.cleanRoom();
+        System.out.println(room1);
+
+
 
 
         Reservation reservation = new Reservation("king", 50, true);
@@ -33,6 +41,13 @@ public class Main {
         employee1.setPayRate(100.10);
         employee1.setHoursWorked(40);
         System.out.println(employee1);
+
+//        employee.punchIn(10);
+//        employee.punchOut(20);
+//        System.out.println(employee);
+        employee.punchInOut(20,10);
+        System.out.println(employee);
+
 
     }
 }

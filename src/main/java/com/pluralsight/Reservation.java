@@ -56,6 +56,8 @@ public class Reservation {
         return getPrice() * getNumberOfNights();
     }
 
+
+
     @Override
     public String toString() {
         return "roomType = '" + roomType + '\'' +

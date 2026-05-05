@@ -51,6 +51,29 @@ public class Room {
     public boolean isAvailable() {
         return !isOccupied() && !isDirty();
     }
+    public void checkedIn(){
+        if (isAvailable()) {
+            System.out.println("Room is checked in!");
+            occupied = true;
+            dirty = true;
+        }else{
+            System.out.println("Room is not available to check in!");
+        }
+    }
+
+    public void checkOut(){
+        System.out.println("Room is checked out!");
+        occupied = false;
+        dirty = true;
+    }
+    public void cleanRoom(){
+        if (!occupied && dirty) {
+            dirty = false;
+            System.out.println("Room is cleaned");
+        }else{
+            System.out.println("Room can't clean");
+        }
+    }
 
     @Override
     public String toString() {
