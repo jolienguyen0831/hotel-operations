@@ -47,8 +47,7 @@ public class Reservation {
         }
 
         if (isWeekend()) {
-            price *= 0.1;
-
+            price *= 1.1;
         }
         return price;
     }
