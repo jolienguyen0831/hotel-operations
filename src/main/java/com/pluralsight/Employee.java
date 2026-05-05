@@ -7,6 +7,10 @@ public class Employee {
     private double payRate;
     private double hoursWorked;
 
+    public Employee(){
+
+    }
+
     public Employee(int employeeId, String name, String department, double payRate, double hoursWorked) {
         this.employeeId = employeeId;
         this.name = name;
