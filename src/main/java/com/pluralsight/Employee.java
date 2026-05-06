@@ -80,14 +80,14 @@ public class Employee {
         double overtimePay = getOvertimeHours() * 1.5 * getPayRate();
         return regularPay + overtimePay;
     }
-//    private static int punchInTime = 0;
-//    public void punchIn(int time) {
-//        punchInTime = time;
-//    }
-//    public void punchOut(int time){
-//        double workTime = time - punchInTime;
-//        hoursWorked +=workTime;
-//    }
+    private static int punchInTime = 0;
+    public void punchIn(int time) {
+        punchInTime = time;
+    }
+    public void punchOut(int time){
+        double workTime = time - punchInTime;
+        hoursWorked +=workTime;
+    }
     public void punchInOut(int inTime, int outTime){
         int punchInTime;
         if (outTime> inTime) {
