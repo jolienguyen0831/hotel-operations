@@ -20,7 +20,6 @@ public class Main {
 
 
 
-
         Reservation reservation = new Reservation("king", 50, true);
         System.out.println(reservation);
 
@@ -46,6 +45,9 @@ public class Main {
 //        employee.punchOut(20);
 //        System.out.println(employee);
         employee.punchInOut(20,10);
+        System.out.println(employee);
+        employee.punchIn();
+        employee.punchOut();
         System.out.println(employee);
 
 
