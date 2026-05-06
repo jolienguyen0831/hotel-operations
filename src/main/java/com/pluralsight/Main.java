@@ -49,7 +49,20 @@ public class Main {
         employee.punchIn();
         employee.punchOut();
         System.out.println(employee);
+        Hotel h1 = new Hotel("Grand Hotel", 5, 20);
+        Hotel h2 = new Hotel("Grand Hotel", 4, 20, 2, 10);
 
+        if(h1.bookRoom(2,false)){
+            System.out.println("Booking successful!");
+        }else {
+            System.out.println("Not enough room");
+        }
+
+        if(h2.bookRoom(5,true)){
+            System.out.println("Booking successful!");
+        }else {
+            System.out.println("Not enough room");
+        }
 
     }
 }

@@ -42,4 +42,27 @@ public class Hotel {
     public int getBookedBasicRooms() {
         return bookedBasicRooms;
     }
+
+    public int getAvailableSuites(){
+        return numberOfSuites - bookedSuites;
+    }
+    public int getAvailableRooms(){
+        return numberOfRooms - bookedBasicRooms;
+    }
+
+    public boolean bookRoom(int numberOfRooms, boolean isSuit){
+        if(isSuit){
+            if(getAvailableSuites() >= numberOfRooms){
+                bookedSuites += numberOfRooms;
+                return true;
+            }
+        }else {
+            if (getAvailableRooms() >= numberOfRooms){
+                bookedBasicRooms += numberOfRooms;
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
